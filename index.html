@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中州灵网 · 加载中</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="loading-screen">
+  <div class="background-overlay"></div>
+  <div class="loading-container">
+    <h1 class="game-title">—— 欢迎进入中州灵网 ——</h1>
+    <input type="password" id="passwordInput" placeholder="请输入通行密令" />
+    <button onclick="checkPassword()">进入</button>
+    <p id="errorMsg" class="error-message"></p>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("passwordInput").value;
+      const errorMsg = document.getElementById("errorMsg");
+      if (password === "SS1231") {
+        window.location.href = "main.html";
+      } else {
+        errorMsg.textContent = "密令错误！";
+      }
+    }
+  </script>
+</body>
+</html>
