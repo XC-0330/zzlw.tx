@@ -1,0 +1,51 @@
+
+body.loading-screen {
+  margin: 0;
+  padding: 0;
+  background: url('../img/loading-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'STKaiti', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-container {
+  text-align: center;
+  background: rgba(255, 255, 240, 0.85);
+  padding: 40px;
+  border: 2px solid #5e4b3c;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00000066;
+}
+
+.game-title {
+  font-size: 32px;
+  color: #2c1d0b;
+  margin-bottom: 20px;
+}
+
+input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  width: 60%;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #5e4b3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
